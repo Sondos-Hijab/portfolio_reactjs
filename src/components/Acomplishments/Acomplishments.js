@@ -1,19 +1,49 @@
-import React from 'react';
+import React from "react";
 
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 
 const data = [
-  { number: 20, text: 'Open Source Projects'},
-  { number: 1000, text: 'Students', },
-  { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+  { title: "Intermediate React Course", text: "Frontend masters" },
+  { title: "Complete Intro to React Course", text: "Frontend masters" },
+  { title: "The Complete JavaScript Course 2022", text: "Udemy" },
+  { title: "Web Programming Course", text: "An-Najah National University" },
+  {
+    title: "Software Engineering Course",
+    text: "An-Najah National University",
+  },
+  {
+    title: "Algorithms Course",
+    text: "An-Najah National University",
+  },
+  {
+    title: "Data Structure Course",
+    text: "An-Najah National University",
+  },
+  {
+    title: "Object Oriented Programming Course",
+    text: "An-Najah National University",
+  },
 ];
 
 const Acomplishments = () => (
-  <div>
-    Acomplishments
-  </div>
+  <Section>
+    <SectionTitle>Courses Taken</SectionTitle>
+    <Boxes>
+      {data.map((card, index) => (
+        <Box key={index}>
+          <BoxNum>{`${card.title}`}</BoxNum>
+
+          <BoxText>{card.text}</BoxText>
+        </Box>
+      ))}
+    </Boxes>
+    <SectionDivider />
+  </Section>
 );
 
 export default Acomplishments;
