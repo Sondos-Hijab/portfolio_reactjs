@@ -17,32 +17,37 @@ import {
 
 const Technologies = () => (
   <Section id="tech">
-    <SectionDivider />
-    <br />
+    <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I have experience working with a variety of technologies within the web
-      development field. From front-end development to user experience and user
-      interface design.
+      I've worked with a range a technologies in the web development world. From
+      Back-end To Design
     </SectionText>
-
     <List>
       <ListItem>
-        <DiReact size="3rem" />
-        <ListContainer>Front-End</ListContainer>
-        <ListParagraph>
-          Experience with
-          <br /> ReactJS
-        </ListParagraph>
+        <picture>
+          <DiReact size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>ReactJS</ListTitle>
+          <ListParagraph>
+            Experiece with <br />
+            React.js
+          </ListParagraph>
+        </ListContainer>
       </ListItem>
 
       <ListItem>
-        <RxFigmaLogo size="3rem" />
-        <ListContainer>UX/UI</ListContainer>
-        <ListParagraph>
-          Experience with <br />
-          Figma & Adobe XD
-        </ListParagraph>
+        <picture>
+          <RxFigmaLogo size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>UX/UI</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            Figma and Adobe XD
+          </ListParagraph>
+        </ListContainer>
       </ListItem>
     </List>
   </Section>

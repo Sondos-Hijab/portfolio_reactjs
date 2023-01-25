@@ -25,7 +25,7 @@ const data = [
     text: "An-Najah National University",
   },
   {
-    title: "Object Oriented Programming Course",
+    title: "OOP using Java Course",
     text: "An-Najah National University",
   },
 ];
