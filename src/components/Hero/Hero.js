@@ -16,10 +16,10 @@ const Hero = () => (
         Sondos's Portfolio
       </SectionTitle>
       <SectionText>
-        I'm Sondos Hijab, and I'm a 4th year computer engineering student at
-        An-Najah National University. My interests are in Front End Engineering,
-        and I love to create beautiful and performant products with delightful
-        user experiences.
+        I am Sondos Hijab, and I am a 4th year computer engineering student at
+        An-Najah National University. I am passionate about front end
+        engineering and creating beautiful, efficient, and delightful user
+        experiences.
       </SectionText>
       <Button
         onClick={() =>
